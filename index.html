@@ -7,14 +7,37 @@
 
 <body>
     <h1>jQuery Test page</h1>
-    <script>
+    <div id="myDiv">This is my div!
+        <ul>
+            <li>I'm a list item.</li>
+            <li>I'm a list item.</li>
+            <li>I'm a list item.</li>
+            <li>I'm a list item.</li>
+            <li>I'm a list item.</li>
+            <li>I'm a list item.</li>
+            <li>I'm a list item.</li>
+        </ul>
+        <div>
+
+            <script>
 
 
-        jQuery('document').ready(function () {
-            alert("This is jQuery!");
-        });
-        alert("this is not jQuery!");
-    </script>
+                $(function () {
+                    $("div#myDiv").css("border", "2px solid red");
+                    $("div#myDiv").css("background-color", "yellow");
+                    $("div#myDiv").append(" This gets added to the div!");
+
+                    /* $("div#myDiv li:even").css("background", "aqua").slideDown(2000); */
+                    $("div#myDiv").hide().slideDown(1000, function () {
+
+                        $("div#myDiv li").each(function () {
+                            $("div#myDiv li:even").css("background", "red").slideDown(2000);
+                        })
+
+                    });
+                });
+        //alert("this is not jQuery!");
+            </script>
 </body>
 
 </html>
