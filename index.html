@@ -2,12 +2,18 @@
 
 <head>
     <title>jQuery</title>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
 </head>
 
 <body>
     <h1>jQuery Test page</h1>
     <script>
-        alert("deez");
+
+
+        jQuery('document').ready(function () {
+            alert("This is jQuery!");
+        });
+        alert("this is not jQuery!");
     </script>
 </body>
 
