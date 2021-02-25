@@ -69,7 +69,7 @@
      <![endif]-->
 </head>
 
-<body>
+<body id="body">
     <header role="banner">
         <img src="images/four-seasons.gif" alt="Seasonal Logo Goes Here" class="flexible" id="logo" />
         <h1 class="masthead">Music Seasonals</h1>
@@ -145,38 +145,38 @@
 
                     case "spring":
                         //alert("Yay Spring");
-                        $("#logo").attr("src", "images/spring.gif");
+                        $("#logo").attr("src", "images/Spring.jpg");
                         $("#songIMG").attr("src", "images/spring-wear.jpg");
-                        $("html").css("background-image", "images/Spring.jpg");
-                        $("main header h3").html("Jump into Spring wear");
+                        $("body").css("background", "img(images/Spring.jpg)");
+                        $("main header h3").html("Listen to this SpRiNgY tune!");
                         break;
 
                     case "summer":
                         $("#logo").attr("src", "images/summer.gif");
                         $("#songIMG").attr("src", "images/summer-wear.jpg");
                         $("html").css("background", "#EBA52B");
-                        $("main header h3").html("Comfy clothes for Summer Wear");
+                        $("main header h3").html("I want to hear music like this Summer(some more).");
                         break;
 
                     case "fall":
                         $("#logo").attr("src", "images/fall.gif");
                         $("#songIMG").attr("src", "images/fall-wear.jpg");
                         $("html").css("background", "#A81124");
-                        $("main header h3").html("Leap into Fall Wear");
+                        $("main header h3").html("I Fall for new music easily!");
                         break;
 
                     case "winter":
                         $("#logo").attr("src", "images/winter.gif");
                         $("#songIMG").attr("src", "images/winter-wear.jpg");
                         $("html").css("background", "#005393");
-                        $("main header h3").html("Bundle up for Winter Wear");
+                        $("main header h3").html("Cozy music for Winter");
                         break;
 
                     case "default":
                         $("#logo").attr("src", "images/rainbow.jpg");
                         $("#songIMG").attr("src", "images/suit.jpg");
                         $("html").css("background", "black");
-                        $("main header h3").html("Be professional and always iron your clothes");
+                        $("main header h3").html("Always be on the lookout for new music and expand your library!");
                         break;
 
 
