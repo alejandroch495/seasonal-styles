@@ -1,4 +1,38 @@
-body{
-    margin:0;
-    padding:0;
+body {
+    margin: 0;
+    padding: 0;
+    background-color:gray;
+}
+
+* {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+#m {
+    border: 1px solid rgb(78, 78, 78);
+    border-radius: 15px;
+    margin: 25px;
+    padding: 25px;
+    text-shadow: 0px 0px 15px white;
+    backdrop-filter: blur(15px);
+}
+
+#m {
+    border: 1px solid rgb(78, 78, 78);
+    border-radius: 15px;
+    margin: 25px;
+    padding: 25px;
+    text-shadow: 0px 0px 15px white;
+    backdrop-filter: blur(15px);
+}
+
+#bannr {
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid rgb(78, 78, 78);
+    border-radius: 15px;
+    margin: 25px;
+    padding: 25px;
+    text-shadow: 0px 0px 15px white;
+    backdrop-filter: blur(15px);
 }
